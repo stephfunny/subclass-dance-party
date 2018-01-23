@@ -1,8 +1,8 @@
 $(document).ready(function() {
   window.dancers = [];
 
-  $('body').css('background-image', 
-  'url("https://www.pitara.com/wordpress/wp-content/uploads/2003/09/what-is-a-volcano.jpg")');
+  // $('body').css('background-image', 
+  // 'url("https://www.pitara.com/wordpress/wp-content/uploads/2003/09/what-is-a-volcano.jpg")');
 
   $('.addDancerButton').on('click', function(event) {
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
@@ -23,13 +23,13 @@ $(document).ready(function() {
 
 
   $('.addBadDancerButton').on('click', function(event) {
-    var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
+    var dancerMakerFunctionName2 = $(this).data('dancer-maker-function-name');
 
-    var dancerMakerFunction = window[dancerMakerFunctionName];
+    var dancerMakerFunction = window[dancerMakerFunctionName2];
 
     var dancer = new dancerMakerFunction(
-      $("body").height() * Math.random(),
-      $("body").width() * Math.random(),
+      500,
+      200,
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
