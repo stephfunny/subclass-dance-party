@@ -3,18 +3,22 @@
   <head>
     <title>Object Dance Party</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
     <script src="src/badDancer.js"></script>
+    <script src="src/tinyDancer.js"></script>
+
   </head>
-  <body>
+  <body background="desert.jpg">
     <div class="topbar">
       <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>    
-      <a href="#" class="addBadDancerButton" data-dancer-maker-function-name="badDancer">add a bad dancer</a> 
-
-</div>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="badDancer">add a bad dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="tinyDancer">add a tiny dancer</a>
+    </div>
     <script src="src/init.js"></script>
   </body>
 </html>

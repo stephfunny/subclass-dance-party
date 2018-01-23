@@ -16,13 +16,22 @@ body, a:link, a:visited, a:active{
 .topbar{
   height:32px;
   background-color: #555;
+  opacity: 0.65;
+
 }
 .title{
   background-color: #777;
 }
+.elton {
+  border: 0px solid blue;
+  border-radius:0px;
+  width: 100px;
+  /* //height: 200px; */
+  position:absolute;
+}
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  border:20px solid pink;
+  border-radius:20px;
   position:absolute;
 }
 
@@ -32,10 +41,11 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
+
 body {
     width: 100%;
     height: 100%;
-    background-image: url("https://www.pitara.com/wordpress/wp-content/uploads/2003/09/what-is-a-volcano.jpg");
+    /* background-image: url("https://www.pitara.com/wordpress/wp-content/uploads/2003/09/what-is-a-volcano.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: ;
