@@ -1,6 +1,6 @@
 var tinyDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="elton dancer animated infinite bounce jackInTheBox"> <img class="elton" src="elton-john-no-bg.png"></img></span>');
+  this.$node = $('<span class="elton dancer animated infinite bounce"> <img class="elton" src="elton-john-no-bg.png"></img></span>');
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
 
