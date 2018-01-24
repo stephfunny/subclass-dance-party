@@ -11,8 +11,8 @@ var makeDancer = function(top, left, timeBetweenSteps) {
   //this.left = left;
 
   // use jQuery to create an HTML <span> tag
-  // this.left = left;
-  // this.top = top;
+  this.left = left;
+  this.top = top;
   this.step();
   this.setPosition(top, left);
 };
@@ -34,7 +34,7 @@ makeDancer.prototype.setPosition = function(top, left) {
     top: top,
     left: left
   };
-  this.$node.css(styleSettings);
+  this.$node.animate(styleSettings);
 };
 
 //dancer.setPosition(top, left);
